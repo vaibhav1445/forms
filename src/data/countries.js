@@ -1,18 +1,17 @@
 export const countries = [
   {
     name: "India",
-    cities: ["Mumbai", "Delhi", "Bangalore", "Hyderabad", "Chennai"],
+    code: "+91",
+    cities: ["Mumbai", "Delhi", "Bangalore"],
   },
   {
     name: "United States",
-    cities: ["New York", "Los Angeles", "Chicago", "Houston", "San Francisco"],
+    code: "+1",
+    cities: ["New York", "Los Angeles", "Chicago"],
   },
   {
     name: "United Kingdom",
-    cities: ["London", "Manchester", "Birmingham", "Liverpool", "Leeds"],
-  },
-  {
-    name: "Canada",
-    cities: ["Toronto", "Vancouver", "Montreal", "Calgary", "Ottawa"],
+    code: "+44",
+    cities: ["London", "Manchester", "Liverpool"],
   },
 ];
