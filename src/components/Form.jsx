@@ -63,7 +63,7 @@ function Form() {
     <div className="max-w-3xl mx-auto p-6 bg-white shadow-md rounded-md mt-8">
       <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">User Registration</h2>
       <form onSubmit={handleSubmit} noValidate className="space-y-5">
-        {/* Input Field */}
+       
         {[
           { label: "First Name", name: "firstName" },
           { label: "Last Name", name: "lastName" },
@@ -85,7 +85,7 @@ function Form() {
           </div>
         ))}
 
-        {/* Password Field */}
+        
         <div>
           <label className="block font-medium text-gray-700 mb-1">Password</label>
           <div className="flex">
@@ -107,7 +107,7 @@ function Form() {
           {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password}</p>}
         </div>
 
-        {/* Phone Number Field */}
+        
         <div>
           <label className="block font-medium text-gray-700 mb-1">Phone No.</label>
           <div className="flex">
@@ -127,7 +127,7 @@ function Form() {
           {errors.phoneNumber && <p className="text-red-500 text-sm mt-1">{errors.phoneNumber}</p>}
         </div>
 
-        {/* Country Field */}
+        
         <div>
           <label className="block font-medium text-gray-700 mb-1">Country</label>
           <select
@@ -146,7 +146,7 @@ function Form() {
           {errors.country && <p className="text-red-500 text-sm mt-1">{errors.country}</p>}
         </div>
 
-        {/* City Field */}
+        
         <div>
           <label className="block font-medium text-gray-700 mb-1">City</label>
           <select
@@ -165,7 +165,7 @@ function Form() {
           {errors.city && <p className="text-red-500 text-sm mt-1">{errors.city}</p>}
         </div>
 
-        {/* Submit Button */}
+        
         <button
           type="submit"
           disabled={isDisabled}
