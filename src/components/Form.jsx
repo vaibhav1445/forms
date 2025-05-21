@@ -24,9 +24,20 @@ function Form() {
   const [showPassword, setShowPassword] = useState(false);
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+  const { name, value } = e.target;
+
+  if (name === "country") {
+    const selectedCountry = countries.find((c) => c.name === value);
+    setFormData((prev) => ({
+      ...prev,
+      country: value,
+      city: "",
+      phoneCode: selectedCountry ? selectedCountry.code : "",
+    }));
+  } else {
     setFormData((prev) => ({ ...prev, [name]: value }));
-  };
+  }
+};
 
   const validate = () => {
     const newErrors = {};
